@@ -1,0 +1,2 @@
+1. `calculateSum()` was *concatenating* `num1` and `num2` as they were being treated as strings, and thus `result` was a string as well, being the result of the concatenation of `num1` followed by `num2`. I think this is because `num1` and `num2` are being retrieved from HTML input fields, which inherently return string values, not numbers.
+2. I would fix it by converting these string values to numbers before performing the addition, by using the `parseInt()` function.
